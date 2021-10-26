@@ -4,7 +4,7 @@ namespace Chapter02.App
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             if (args.Length != 2)
             {
