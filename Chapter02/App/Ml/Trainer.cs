@@ -38,6 +38,7 @@ namespace Chapter02.App.Ml
             ITransformer trainedModel = trainingPipeline.Fit(dataSplit.TrainSet);
 
             mlContext.Model.Save(trainedModel, dataSplit.TrainSet.Schema, ModelPath);
+            Console.WriteLine(ModelPath + "<-----");
 
             IDataView testSetTransform = trainedModel.Transform(dataSplit.TestSet);
 

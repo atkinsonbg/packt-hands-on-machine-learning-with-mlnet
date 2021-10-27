@@ -7,7 +7,7 @@ namespace Chapter02.App.Ml.Objects
         [LoadColumn(0)]
         public bool Label { get; set; }
 
-        [LoadColumn(0)]
+        [LoadColumn(1)]
         public string Text { get; set; }
     }
 }
