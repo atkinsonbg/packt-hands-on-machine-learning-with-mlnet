@@ -1,11 +1,14 @@
 build:
 	dotnet build -o BuildOutput
 
-train:
+train-sample:
 	./BuildOutput/App train Data/sampledata.tsv
 
+train-all:
+	./BuildOutput/App train Data/all_data.csv
+
 predict-p:
-	./BuildOutput/App predict "this is a amazing thing, you should get it!"
+	./BuildOutput/App predict "this is a great product thing, you should get it!"
 
 predict-n:
-	./BuildOutput/App predict "quality was very poor!"
+	./BuildOutput/App predict "I will never go to this place ever again, the food is terrible"
