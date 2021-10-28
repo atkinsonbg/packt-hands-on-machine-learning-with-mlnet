@@ -34,9 +34,8 @@ namespace Chapter02.App.Ml
                 Text = inputData
             });
 
-            string predictionOutput = (prediction.Prediction ? "Negative" : "Positive");
-            string predictionConfidence = $"{prediction.Probability:P2}";
-            string predictionScore = $"{prediction.Score:P2}";
+            string predictionOutput = (prediction.Label ? "Negative" : "Positive");
+            string predictionConfidence = $"{prediction.Score[0]} / {prediction.Score[1]}";
 
             Console.WriteLine(
                 $"Based on '{inputData}', the feedback is predicted to be:{Environment.NewLine}" +
