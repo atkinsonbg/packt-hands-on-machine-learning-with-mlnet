@@ -7,7 +7,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
+    <ItemGroup>
     <PackageReference Include="Microsoft.ML" Version="1.7.0-preview.final" />
   </ItemGroup>
 

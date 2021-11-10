@@ -445,3 +445,7 @@ BuildOutput/
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,visualstudio,macos,dotnetcore
+
+**/sampledata/**
+**/samples/**
+**.csv

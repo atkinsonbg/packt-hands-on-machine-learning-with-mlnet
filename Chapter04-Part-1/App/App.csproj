@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ML" Version="1.7.0-preview.final" />
+    <PackageReference Include="Microsoft.ML.FastTree" Version="1.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Common\" />
+    <None Remove="Data\" />
+    <None Remove="ML\" />
+    <None Remove="ML\Base\" />
+    <None Remove="ML\Objects\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="Data\" />
+    <Folder Include="ML\" />
+    <Folder Include="ML\Base\" />
+    <Folder Include="ML\Objects\" />
+  </ItemGroup>
+</Project>
